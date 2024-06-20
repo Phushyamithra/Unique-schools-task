@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const FormDisplay = ({id,item}) => {
-
+const FormDisplay = ({ item }) => {
   return (
     <div className='table-container'>
-        <div className="table-element">
-            <span>{id}</span>
-            <span>{item.name}</span>
-            <span>{item.hex}</span>
-            <span>{item.email}</span>
-            
-        </div>
+      <table>
+      <div className="table-element">
+
+        <td>#{item.id}</td>
+        <td>{item.name}</td>
+        <td>{item.hex}</td>
+        <td>{item.email}</td>
+      </div>
+      </table>
     </div>
   )
 }
 
-export default FormDisplay
+export default FormDisplay;
